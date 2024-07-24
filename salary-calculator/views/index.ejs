@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>給与計算アプリ</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>給与計算アプリ</h1>
+        <form id="salaryForm">
+            <label for="base_salary">基本給（円）:</label>
+            <input type="text" id="base_salary" name="base_salary"><br>
+            <label for="overtime_hours">残業時間（時間）:</label>
+            <input type="text" id="overtime_hours" name="overtime_hours"><br>
+            <input type="submit" value="計算">
+        </form>
+    </div>
+    <script src="/scripts/formHandler.js"></script>
+</body>
+</html>

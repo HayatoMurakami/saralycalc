@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>計算結果</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>計算結果</h1>
+        <p>残業代: <span id="overtimePay"><%= overtimePay.toFixed(2) %></span> 円</p>
+        <p>総月給: <span id="totalSalary"><%= totalSalary.toFixed(2) %></span> 円</p>
+        <p>厚生年金保険料: <span id="socialInsurance"><%= socialInsurance.toFixed(2) %></span> 円</p>
+        <p>源泉所得税: <span id="withholdingTax"><%= withholdingTax.toFixed(2) %></span> 円</p>
+        <p>手取り月給: <span id="netSalary"><%= netSalary.toFixed(2) %></span> 円</p>
+        <canvas id="salaryChart" width="400" height="200"></canvas>
+        <a href="/" class="button">戻る</a>
+    </div>
+    <script src="/scripts/chartHandler.js"></script>
+</body>
+</html>
